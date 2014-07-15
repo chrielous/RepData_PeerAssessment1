@@ -394,7 +394,7 @@ for(n in 1:length(fulldata[,1]))
      days<-c(days,"weekday")
 }
 days<-factor(days)
-datawday<-cbind(fulldata,days)
+datawday<-cbind(fulldata,days) 
 
 dataweekday<-subset(datawday,datawday$days=="weekday")
 dataweekend<-subset(datawday,datawday$days=="weekend")

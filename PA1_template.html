@@ -554,7 +554,7 @@ for(n in 1:length(fulldata[,1]))
      days&lt;-c(days,&quot;weekday&quot;)
 }
 days&lt;-factor(days)
-datawday&lt;-cbind(fulldata,days)
+datawday&lt;-cbind(fulldata,days) 
 
 dataweekday&lt;-subset(datawday,datawday$days==&quot;weekday&quot;)
 dataweekend&lt;-subset(datawday,datawday$days==&quot;weekend&quot;)
